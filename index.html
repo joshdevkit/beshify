@@ -17,8 +17,9 @@
       background-color: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 15%, rgba(149, 0, 255, 1) 56%);
       overflow-x: hidden;
     }
+
     .container {
-      margin-top: 250px;
+      margin-top: 100px;
       justify-content: center;
       align-items: center;
       display: flex;
@@ -26,7 +27,8 @@
 
     .card {
       border: none;
-      width: 760px;
+      width: 90%;
+      max-width: 760px;
       background-color: transparent;
     }
 
@@ -62,7 +64,6 @@
     .output {
       margin-top: 20px;
       color: white;
-      width: 87%;
       border: 1px solid white;
       border-radius: 20px;
       padding: 10px;
@@ -95,11 +96,12 @@
     h4 {
       margin-right: 150px;
     }
+
     .notification {
       position: fixed;
       top: 20px;
       right: 20px;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(107, 63, 47);
       color: white;
       padding: 10px 20px;
       border-radius: 10px;
@@ -113,16 +115,14 @@
       <div class="card-body">
         <h4 class="text-center text-white mr-4 mb-4">JoshDev Beshify App</h4>
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-8">
-            <textarea class="form-control beshify_area" rows="2"></textarea>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <textarea class="form-control beshify_area py-lg-3" rows="2"></textarea>
           </div>
-          <div class="col-md-4">
-            <button class="btn btn-dark py-3" id="beshify" onclick="generateBeshify()">Generate Beshify</button>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <button class="btn btn-dark py-3 w-100 mt-md-0 mt-sm-3" id="beshify" onclick="generateBeshify()">Generate Beshify</button>
           </div>
         </div>
-        <div class="output" id="output">
-          
-        </div>
+        <div class="output" id="output"></div>
       </div>
     </div>
   </div>
